@@ -2,39 +2,6 @@
 <html lang="en">
     <head>
         <title>AB Demo</title>
-        <--!<script type="text/javascript">
-            (function(){
-                //store name of the Analytics object
-                window.GoogleAnalyticsObject = 'ga'
-              
-                //check weather the Analytics object is defined
-                if (!('ga' in window)){
-                    
-                    window.ga = function(){
-                       
-                    //add the tasks to the que
-                    window.ga.q.push(arguments);
-                };
-           
-            window.ga.q = [];
-            };
-           
-            window.ga.l = (new Date()).getTime();
-            
-            var script =  document.createElement('script'),
-            script.src = '//www.google-analytics.com/analytics.js';
-            script.async = true;
-      
-            var firstScript = document.getElementsByTagName('script')[0];
-            firstScript..parentNode.insertBefore(script, firstScript)
-
-        })();
-
-        
-        
-        </script>-->
-        
-        
         
         <script type="text/javascript">
          (function(i,s,o,g,r,a,m){
@@ -111,7 +78,8 @@
                     '<input type="button" value="Yes!" onclick="ga(\'send\', \'event\', \'buttonclick\', \'tnotcool\'); alert(\'Not Cool.\');">'
                 'experiment2_button2': 
                    '<input type="button" value="Yes!" onclick="ga(\'send\', \'event\', \'buttonclick\', \'t1cool\'); alert(\'Cool!\');">'
-        ]
+            }
+         ]
      });
      ga('send', 'pageview');
 
