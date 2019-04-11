@@ -3,16 +3,60 @@
     <head>
         <title>AB Demo</title>
         <script type="text/javascript">
-         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            (function(){
+                //store name of the Analytics object
+                window.GoogleAnalyticsObject = 'ga'
+              
+                //check weather the Analytics object is defined
+                if (!('ga in window)){
+                    
+                    window.ga = function(){
+                       
+                    //add the tasks to the que
+                    window.ga.q.push(arguments);
+                };
+           
+            window.ga.q = [];
+            };
+           
+            window.ga.1 = (new Date()).getTime();
+            
+            var script =  document.createElement('script'),
+            script.src = '//www.google-analytics.com/analytics.js';
+            script.async = true;
+      
+            var firstScript = document.getElementsByTagName('script')[0];
+            firstScript..parentNode.insertBefore(script, firstScript)
+
+        })();
+
+        
+        
+        </script>
+        
+        
+        
+<!--        <script type="text/javascript">
+         (function(i,s,o,g,r,a,m){
+             i['GoogleAnalyticsObject'] = r;
+             i[r] = i[r] || function(){ 
+                 (i[r].q = i[r].q || []).push(arguments)
+             }, 
+             i[r].l = 1*new Date(); 
+             a = s.createElement(o), 
+                 m = s.getElementsByTagName(o)[0]; 
+             a.async = 1;
+             a.src = g;
+             m.parentNode.insertBefore(a, m)
          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
          ga('create', 'UA-138162477-2', {  // TODO - replace the UA tracking ID!
             'cookieDomain': 'none'
          });
         </script>
-
-        <script type="text/javascript" src="abalytics.js"></script>
+-->
+        <script type="text/javascript" src="abalytics.js">
+        </script>
+        
     </head>
 
     <body>
