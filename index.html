@@ -67,6 +67,15 @@
         <form class="experiment1_button">
             This will be replaced too, with a button for the form
         </form>
+               <div class="experiment2_text">
+            This content will be replaced by ABalytics
+        </div>
+        <form class="experiment2_button1">
+            This will be replaced too, with a button for the form
+        </form>
+        <form class="experiment2_button2">
+            Text will be replaced
+         </form>
     </body>
 
     <script type="text/javascript">
@@ -85,6 +94,24 @@
                        '<input type="button" value="Click me, OR ELSE" onclick="ga(\'send\', \'event\', \'buttonclick\', \'stern\'); alert(\'You will be spared.\');">'
              }
          ]
+         experiment2: [
+            {
+                name: 'test1',
+                'experiment2_text': 'Will you click this button?',
+                'experiment2_button1': 
+                    '<input type="button" value="Yes!" onclick="ga(\'send\', \'event\', \'buttonclick\', \'t1cool\'); alert(\'Cool!\');">'
+                'experiment2_button2': 
+                   '<input type="button" value="Yes!" onclick="ga(\'send\', \'event\', \'buttonclick\', \'t1notcool\'); alert(\'Not Cool.\');">'
+
+            },
+            {
+                name: 'test2',
+                'experiment2_text': 'Do not click!!'
+                'experiment2_button1': 
+                    '<input type="button" value="Yes!" onclick="ga(\'send\', \'event\', \'buttonclick\', \'tnotcool\'); alert(\'Not Cool.\');">'
+                'experiment2_button2': 
+                   '<input type="button" value="Yes!" onclick="ga(\'send\', \'event\', \'buttonclick\', \'t1cool\'); alert(\'Cool!\');">'
+        ]
      });
      ga('send', 'pageview');
 
